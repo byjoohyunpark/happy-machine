@@ -1,5 +1,5 @@
 # happy-machine
-
+Can machine understand a sense of happiness? If so, how will they describe it? Through LSTM networks, this happy machine is trained with 100,535 crowd-sourced happy moments collected from people around the world. 
 
 
 #### TRAINING MODEL
