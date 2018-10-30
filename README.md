@@ -4,9 +4,8 @@ Can machine understand a sense of happiness? If so, how will they describe it? W
 
 #### Training Model
 A pre-trained model is processed and executed with [ml5.js](https://ml5js.org/) and [tensorflow](https://www.tensorflow.org/) through LSTM networks. 
-
 ```
-/model
+/models/data
 ```
 
 #### Dataset
