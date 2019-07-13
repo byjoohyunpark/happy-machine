@@ -39,6 +39,7 @@ function modelReady() {
 function generate() {
     // Update the status log
     select('#status').html('Generating...');
+    select('#result').html("");
 
     // Grab the original text
     let original = textInput.value();
@@ -64,13 +65,16 @@ function generate() {
             select('#status').html('Ready');
 
             let text = txt.replace(/^\w/, c => c.toUpperCase());
-            let res = result.substring(0, result.indexOf('.'));
-            //            console.log(result);
 
-            if (res == "") {
-                select('#result').html("*");
-                array.push("*");
+            //            console.log(result);
+            //            console.log(result.indexOf('.'));            
+
+            if (result.indexOf('.') == -1) {
+                let res = result;
+                select('#result').html(text + res + "...");
+                array.push(text + res + "...");
             } else {
+                let res = result.substring(0, result.indexOf('.'));
                 select('#result').html(text + res + ".");
                 array.push(text + res + ".");
             }
